@@ -1,0 +1,140 @@
+#main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+  border: 1px solid hsla(0, 0%, 85%, 1);
+
+  background-color: hsla(0, 100%, 100%, 1);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1/4;
+  padding: 0rem 0rem 0rem 0rem;
+  border-bottom: 1px solid hsla(0, 0%, 85%, 1);
+  margin-left: 1.5rem;
+  align-items: center;
+}
+
+.row .Quantity {
+  align-items: right;
+}
+
+.row .button {
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  height: 20px;
+  color:white;
+  width: 90px;
+
+
+  float: right;
+  grid-column-start: 3;
+}
+
+#no-border {
+  border-bottom: none;
+}
+
+input {
+  width: 3rem;
+  padding-left: 1rem;
+}
+
+.total {
+
+  border-left: 1px solid hsla(0, 0%, 85%, 1);
+
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 0rem;
+  align-content: right;
+}
+
+.product-item h3 {
+  margin-bottom: .75rem;
+  color: hsla(0, 0%, 29%, 1);
+}
+
+.product-item .price {
+  color: hsla(0, 0%, 29%, 1);
+}
+
+.description {
+  padding: 1.5rem;
+  text-align: left;
+}
+.total {
+  grid-column: 3;
+}
+
+.total .description h3 {
+
+}
+
+
+.total .button {
+
+  border-radius: 30px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  transition: .25s;
+  font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+   font-weight: 400;
+  justify-self: right;
+  grid-row-start: 3;
+  padding: 10px;
+  height: 40px;
+}
+
+.total .button:hover {
+
+  border-radius: 30px;
+  background-color: #0692c1;
+  text-align: center;
+  color: white;
+  transition: .25s;
+  font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 400;
+  justify-self: right;
+
+
+
+
+}
+
+#main .button {
+  box-sizing: border-box;
+  padding: 0.875rem 5rem;
+  border-radius: 54px;
+  margin-left: 1rem;
+
+}
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+}
